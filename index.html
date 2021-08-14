@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href="CSS/style.css">
+    <link rel = "stylesheet" href="CSS/custom.css">
+    <title>Sorting Algorithm Visualiser</title>
+</head>
+<body>
+
+<div class ="buttoncontainer">
+    <button id="bubble" type="button" class="btn btn-dark">Bubble Sort</button>
+    <button id="selection" type="button" class="btn btn-dark">Selection Sort</button>
+    <button id="insertion" type="button" class="btn btn-dark">Insertion Sort</button>
+    <button id="quick" type="button" class="btn btn-dark">Quick Sort</button>
+    <button id="merge" type="button" class="btn btn-dark">Merge Sort</button>
+    <button id="refresh" type="button" class="btn btn-success">Refresh</button>
+        
+</div>
+
+<div class ="screencontainer">
+<canvas id="screen" width="800" height="400"></canvas>
+</div>
+<div class ="slidecontainer">
+    <label>Modify Size:</label>
+    <input type="range" min="5" max="20" value="5" id="elements" class="slider">
+    <label>Modify Speed:</label>
+    <input type="range" min="1" max="6" value="1" id="seconds" class="slider">
+</div>
+
+<script src="./JS/buildarray.js"></script>
+<script src="./JS/drawbar.js"></script>
+<script src="./JS/delay.js"></script>
+<script src="./JS/setbarcolor.js"></script>
+<script src="./JS/bubblesort.js"></script>
+<script src="./JS/selectionsort.js"></script>
+<script src="./JS/insertionsort.js"></script>
+<script src="./JS/quicksort.js"></script>
+<script src="./JS/mergesort.js"></script>
+<script src="./JS/togglebutton.js"></script>
+<script src="./JS/listener.js"></script>
+</body>
+</html>
