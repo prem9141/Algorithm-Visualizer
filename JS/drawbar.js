@@ -1,6 +1,6 @@
+/* Function to draw canvas element on screen */
 const drawRect = () => 
 {
-    
     let screen = document.getElementById("screen");
     let cvs_screen = screen.getContext("2d");
     
