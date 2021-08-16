@@ -1,3 +1,4 @@
+/* Function to change canvas element color*/
 const setBarColor = (array,color) =>
 {
     for(let i=0;i<array.length;i++)
