@@ -1,6 +1,6 @@
 const insertionSort = async () =>
 {
-    console.log(numArray);
+    togglebutton(true);
     let helperArray = [...numArray];
     let length = numArray.length;
     let temp,j;
@@ -31,5 +31,6 @@ const insertionSort = async () =>
             setBarColor([j,j-1],sortedColor);
         }
         await delay();
-    } 
+    }
+    togglebutton(false); 
 };
