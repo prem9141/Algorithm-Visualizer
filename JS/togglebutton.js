@@ -1,3 +1,4 @@
+/* Function to enable and disable button */
 const togglebutton = (value) =>
 {
     let button = document.getElementsByTagName("button");
