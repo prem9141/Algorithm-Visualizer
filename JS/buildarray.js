@@ -1,3 +1,4 @@
+/* Function to generate random numbers based on Size slider */
 const getRandomArray = () => 
 {
     numArray.splice(0,numArray.length);
