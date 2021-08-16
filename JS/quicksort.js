@@ -36,8 +36,7 @@ const partition = async (array,left,right) => {
           setBarColor([left,right],initialColor);
           left++;
           right--
-        }
-        //await delay();       
+        }               
     }
     clearBarColor();
     return left;
