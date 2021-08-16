@@ -3,9 +3,9 @@ const mergeArray = async (array,helper,left,middle,right) =>
     for(let i=left;i<=right;i++) 
         helper[i] = array[i];
 
+    /*** Temp array just for animation purpose */    
     let temp = [...array];
-    //console.log("Temp" + temp);
-
+    
     let low = left;
     let high = middle+1;
     let current = left;
@@ -19,8 +19,7 @@ const mergeArray = async (array,helper,left,middle,right) =>
             await delay();
             temp[current] = helper[low];
             setBarColor([low,high],initialColor);
-            //await delay();
-            
+                        
             low++
         }
         else
@@ -29,13 +28,9 @@ const mergeArray = async (array,helper,left,middle,right) =>
             await delay();
             temp[current] = helper[high];
             setBarColor([low,high],initialColor);
-           // await delay();
             high++            
         }
         current++;
-       
-        
-        
     }
 
     let remaining = middle - low;
@@ -47,7 +42,7 @@ const mergeArray = async (array,helper,left,middle,right) =>
         array[i] = temp[i];
     
     await delay();
-   console.log("MergeArray:" + array.slice(left,right+1));
+   
 }
 
 const mergeSort = async (array,helper,left,right) =>
@@ -55,12 +50,10 @@ const mergeSort = async (array,helper,left,right) =>
     
     if(left<right)
     {
-        console.log("Original Array:" + array.slice(left,right+1));
         let middle = Math.floor((left+right)/2);
-        console.log("Middle:" + array[middle]);
         await mergeSort(array,helper,left,middle);
         await mergeSort(array,helper,middle+1,right);
         await mergeArray(array,helper,left,middle,right);        
     }
-    console.log(numArray);
+    
 };
