@@ -35,18 +35,22 @@ insertion.addEventListener("click",() => {
 let quick = document.getElementById("quick");
 quick.addEventListener("click",async ()=> {
     clearBarColor();
+    togglebutton(true);
     await quickSort(numArray,0,numArray.length-1);
     setBarColor([...numArray.keys()],sortedColor);
     drawRect();
+    togglebutton(false);
 });
 
 let merge = document.getElementById("merge");
 let helperArray = []
 merge.addEventListener("click",async ()=> {
     clearBarColor();
+    togglebutton(true);
     await mergeSort(numArray,helperArray,0,numArray.length-1);
     setBarColor([...numArray.keys()],sortedColor);
     drawRect();
+    togglebutton(false);
 });
 
 let refresh = document.getElementById("refresh");
