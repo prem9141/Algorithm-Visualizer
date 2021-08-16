@@ -1,6 +1,6 @@
 const selectionSort = async () =>
 {
-    console.log(numArray);
+    togglebutton(true);
     let length = numArray.length;
     let minIndex,temp;
     for(let i=0;i<length-1;i++)
@@ -34,4 +34,5 @@ const selectionSort = async () =>
     }
     setBarColor([numArray.length-1],sortedColor);
     await delay();
+    togglebutton(false);
 };
