@@ -51,4 +51,5 @@ merge.addEventListener("click",async ()=> {
 
 let refresh = document.getElementById("refresh");
 refresh.addEventListener("click",getRandomArray);
+
 window.addEventListener("load",getRandomArray);
