@@ -1,5 +1,6 @@
 const bubbleSort = async () => {
     togglebutton(true);
+    
     for(let i=0;i<numArray.length-1;i++)
     {
         let j;
