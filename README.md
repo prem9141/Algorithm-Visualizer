@@ -12,7 +12,7 @@ A simple web application to visualize how sorting algorithms like bubble sort, s
 
 ### `Bubble Sort` <br>
 
-![Bubble Sort](screenshots/bubble_sort.png.png)
+![Bubble Sort](screenshots/bubble_sort.png)
 
 ### `Selection Sort` <br>
 
@@ -24,7 +24,7 @@ A simple web application to visualize how sorting algorithms like bubble sort, s
 
 ### `Quick Sort` <br>
 
-![Quick Sort](screenshots/quick_sort.png)
+![Quick Sort](screenshots/quick_sort_1.png)
 
 ### `Merge Sort` <br>
 
